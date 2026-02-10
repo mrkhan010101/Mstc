@@ -8,23 +8,27 @@
       "title": "Start URL",
       "type": "string",
       "description": "MSTC auction listing page to start crawling from.",
-      "default": "https://www.mstcindia.co.in/content/Forthcoming_e_Auctions_for_All_regions.aspx"
+      "default": "https://www.mstcindia.co.in/content/Forthcoming_e_Auctions_for_All_regions.aspx",
+      "editor": "textfield"
     },
     "keywords": {
       "title": "Keywords to match",
       "type": "array",
-      "description": "List of keywords to detect (BSNL, SSA, Bharat Sanchar Nigam, etc).",
+      "description": "List of keywords to detect inside link text (BSNL, SSA, Bharat Sanchar Nigam, etc).",
       "default": ["BSNL", "Bharat Sanchar Nigam", "SSA"],
-      "items": { 
+      "editor": "array",
+      "items": {
         "type": "string",
-        "description": "Single keyword to match inside the link text."
+        "description": "A single keyword to match.",
+        "editor": "textfield"
       }
     },
     "maxDepth": {
       "title": "Maximum Crawl Depth",
       "type": "integer",
       "description": "How many levels deep the crawler should follow links.",
-      "default": 1
+      "default": 1,
+      "editor": "number"
     }
   }
 }
