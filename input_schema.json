@@ -14,13 +14,13 @@
     "keywords": {
       "title": "Keywords to match",
       "type": "array",
-      "description": "List of keywords to detect inside link text (BSNL, SSA, Bharat Sanchar Nigam, etc).",
+      "description": "Select keywords to detect inside link text.",
       "default": ["BSNL", "Bharat Sanchar Nigam", "SSA"],
-      "editor": "array",
+      "editor": "select",
       "items": {
         "type": "string",
-        "description": "A single keyword to match.",
-        "editor": "textfield"
+        "editor": "textfield",
+        "enum": ["BSNL", "Bharat Sanchar Nigam", "SSA", "MTNL", "Telecom", "Exchange"]
       }
     },
     "maxDepth": {
