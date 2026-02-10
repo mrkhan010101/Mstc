@@ -19,7 +19,7 @@
       "editor": "select",
       "items": {
         "type": "string",
-        "editor": "textfield",
+        "editor": "select",
         "enum": ["BSNL", "Bharat Sanchar Nigam", "SSA", "MTNL", "Telecom", "Exchange"]
       }
     },
