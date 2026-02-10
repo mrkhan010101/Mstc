@@ -18,9 +18,7 @@
       "default": ["BSNL", "Bharat Sanchar Nigam", "SSA"],
       "editor": "select",
       "items": {
-        "type": "string",
-        "editor": "select",
-        "enum": ["BSNL", "Bharat Sanchar Nigam", "SSA", "MTNL", "Telecom", "Exchange"]
+        "type": "string"
       }
     },
     "maxDepth": {
