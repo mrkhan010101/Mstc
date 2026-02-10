@@ -1,0 +1,24 @@
+{
+  "title": "MSTC BSNL PDF Downloader",
+  "description": "Crawl MSTC auction listings and auto-download BSNL related PDF files.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrl": {
+      "title": "Start URL",
+      "type": "string",
+      "default": "https://www.mstcindia.co.in/content/Forthcoming_e_Auctions_for_All_regions.aspx"
+    },
+    "keywords": {
+      "title": "Keywords to match",
+      "type": "array",
+      "default": ["BSNL", "Bharat Sanchar Nigam", "SSA"],
+      "items": { "type": "string" }
+    },
+    "maxDepth": {
+      "title": "Max Crawl Depth",
+      "type": "integer",
+      "default": 1
+    }
+  }
+}
